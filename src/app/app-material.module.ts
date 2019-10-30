@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
-import { MatBadgeModule } from '@angular/material';
-import { MatButtonModule } from '@angular/material';
+import { MatBadgeModule , MatButtonModule } from '@angular/material';
 
 @NgModule ({
     imports: [MatBadgeModule , MatButtonModule],
