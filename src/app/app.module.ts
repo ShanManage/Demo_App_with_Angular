@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './app-material.module';
 import { RoomsComponent } from './accomodation/rooms/rooms.component';
+import { FoodBeverageComponent } from './food-beverage/food-beverage.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AccomodationComponent,
-    RoomsComponent
+    RoomsComponent,
+    FoodBeverageComponent
   ],
   imports: [
     BrowserModule,
