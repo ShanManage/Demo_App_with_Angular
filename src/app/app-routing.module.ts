@@ -6,6 +6,8 @@ import { CelebrationsComponent } from './celebrations/celebrations.component';
 import { AccomodationComponent } from './accomodation/accomodation.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { SigninComponent } from './auth/signin/signin.component';
+import { SignupComponent } from './auth/signup/signup.component';
 
 const routes: Routes = [
   { path : 'accomodation' , component : AccomodationComponent },
@@ -14,6 +16,8 @@ const routes: Routes = [
   { path : 'lifestyle' , component : LifestyleComponent },
   { path : 'offers' , component : OffersComponent },
   { path : 'weddings' , component : WeddingsComponent }
+  { path : 'signin' , component : SigninComponent }
+  { path : 'signup' , component : SignupComponent }
 
 ];
 
