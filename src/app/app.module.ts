@@ -24,6 +24,9 @@ import { AuthComponent } from './auth/auth.component';
 import { SigninComponent } from './auth/signin/signin.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './navigation/header/header.component';
+import { NavtabComponent } from './navigation/navtab/navtab.component';
+import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +49,10 @@ import { HomeComponent } from './home/home.component';
     AuthComponent,
     SigninComponent,
     SignupComponent,
-    HomeComponent
+    HomeComponent,
+    HeaderComponent,
+    NavtabComponent,
+    SidenavListComponent
   ],
   imports: [
     BrowserModule,
