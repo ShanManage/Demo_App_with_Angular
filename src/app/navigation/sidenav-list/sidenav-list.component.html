@@ -1,1 +1,22 @@
-<p>sidenav-list works!</p>
+<mat-nav-list>
+    <a mat-list-item [routerLink]="['/signin']" >
+        <mat-icon>input</mat-icon>
+        <span>Signin</span>
+    </a>
+    <a mat-list-item [routerLink]="['/signup']" >
+        <mat-icon>account_circle</mat-icon>
+        <span>Signup</span>
+    </a>
+    <a mat-list-item [routerLink]="['/accomodation']" >
+        <mat-icon>hotel</mat-icon>
+        <span>Accomodation</span>
+    </a>
+    <a mat-list-item [routerLink]="['/offers']" >
+        <mat-icon>loyalty</mat-icon>
+        <span>Offfers</span>
+    </a>
+    <a mat-list-item [routerLink]="['/food-beverage']" >
+        <mat-icon>fastfood</mat-icon>
+        <span>Food-Beverage</span>
+    </a>
+</mat-nav-list>
