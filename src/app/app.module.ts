@@ -1,11 +1,12 @@
-import { AccomodationComponent } from './accomodation/accomodation.component';
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { MaterialModule } from './app-material.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppRoutingModule } from './app-routing.module';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { AccomodationComponent } from './accomodation/accomodation.component';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule } from './app-material.module';
 import { RoomsComponent } from './accomodation/rooms/rooms.component';
 import { FoodBeverageComponent } from './food-beverage/food-beverage.component';
 import { RestaurantComponent } from './food-beverage/restaurant/restaurant.component';
@@ -58,7 +59,8 @@ import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.com
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
