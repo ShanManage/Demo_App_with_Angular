@@ -1,0 +1,12 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$HotelApp-primary: mat-palette($mat-indigo);
+$HotelApp-accent:  mat-palette($mat-pink, A200, A100, A400);
+
+$HotelApp-warn:    mat-palette($mat-red);
+
+$candy-app-theme: mat-light-theme($HotelApp-primary, $HotelApp-accent, $HotelApp-warn);
+
+@include angular-material-theme($HotelApp-theme);
