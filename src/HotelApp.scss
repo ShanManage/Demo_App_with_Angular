@@ -1,16 +1,16 @@
 @import '~@angular/material/theming';
 
 $hotel-primay: (
-50 : #f6fbfb,
-100 : #e8f5f4,
-200 : #d9efed,
-300 : #c9e9e6,
-400 : #bee4e0,
+50 : #ffffff,
+100 : #ffffff,
+200 : #ffffff,
+300 : #ddf1ef,
+400 : #c8e8e5,
 500 : #b2dfdb,
-600 : #abdbd7,
-700 : #a2d7d2,
-800 : #99d2cd,
-900 : #8acac4,
+600 : #9cd6d1,
+700 : #87cdc7,
+800 : #71c4bd,
+900 : #5cbbb3,
 A100 : #ffffff,
 A200 : #ffffff,
 A400 : #f6fffe,
@@ -69,7 +69,7 @@ contrast: (
 @include mat-core();
 
 $HotelApp-primary: mat-palette($hotel-primay, 700 , 300 , 900);
-$HotelApp-accent:  mat-palette($hotel-accent, 50);
+$HotelApp-accent:  mat-palette($hotel-accent, 500 , 300 , 700);
 
 $HotelApp-warn:    mat-palette($mat-red);
 
@@ -78,5 +78,15 @@ $HotelApp: mat-light-theme($HotelApp-primary, $HotelApp-accent, $HotelApp-warn);
 @include angular-material-theme($HotelApp);
 
 .nav-tab-container {
-    background-color: mat-color($HotelApp-primary);
+    background-color: mat-color($HotelApp-primary, lighter);
+}
+
+.mat-list-option:hover, 
+.mat-list-option:focus, 
+.mat-nav-list .mat-list-item:hover, 
+.mat-nav-list .mat-list-item:focus, 
+.mat-action-list .mat-list-item:hover, 
+.mat-action-list .mat-list-item:focus {
+    background-color: mat-color($HotelApp-primary, 300);
+    color: mat-color($HotelApp-primary, 900);
 }
