@@ -1,0 +1,11 @@
+@import '~@angular/material/theming';
+
+@mixin navtab-component-theme($HotelApp) {
+    
+    $primary: map-get($HotelApp , primary);
+    $accent: map-get($HotelApp , accent);
+
+    .nav-tab-container {
+        background-color: mat-color($HotelApp-primary, lighter);
+    }
+}

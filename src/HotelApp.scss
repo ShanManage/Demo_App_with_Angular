@@ -75,11 +75,11 @@ $HotelApp-warn:    mat-palette($mat-red);
 
 $HotelApp: mat-light-theme($HotelApp-primary, $HotelApp-accent, $HotelApp-warn);
 
-@include angular-material-theme($HotelApp);
+@import './app/navigation/navtab/navtab.component-theme.scss';
 
-.nav-tab-container {
-    background-color: mat-color($HotelApp-primary, lighter);
-}
+@include angular-material-theme($HotelApp);
+@include navtab-component-theme($HotelApp);
+
 
 .mat-list-option:hover, 
 .mat-list-option:focus, 
