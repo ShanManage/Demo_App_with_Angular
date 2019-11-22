@@ -13,6 +13,9 @@ import { FoodBeverageComponent } from './food-beverage/food-beverage.component';
 const routes: Routes = [
   { path : 'food-beverage' , component : FoodBeverageComponent },
   { path : 'accomodation' , component : AccomodationComponent },
+  { path : 'foodandbaverage',
+    redirectTo : 'food-beverage',
+    pathMatch : 'full'},
   { path : 'celebrations' , component : CelebrationsComponent },
   { path : 'lifestyle' , component : LifestyleComponent },
   { path : 'weddings' , component : WeddingsComponent },

@@ -76,17 +76,10 @@ $HotelApp-warn:    mat-palette($mat-red);
 $HotelApp: mat-light-theme($HotelApp-primary, $HotelApp-accent, $HotelApp-warn);
 
 @import './app/navigation/navtab/navtab.component-theme.scss';
+@import './app/navigation/sidenav-list/sidenav-list.component-theme.scss';
 
 @include angular-material-theme($HotelApp);
 @include navtab-component-theme($HotelApp);
+@include sidenav-list-component-theme($HotelApp);
 
 
-.mat-list-option:hover, 
-.mat-list-option:focus, 
-.mat-nav-list .mat-list-item:hover, 
-.mat-nav-list .mat-list-item:focus, 
-.mat-action-list .mat-list-item:hover, 
-.mat-action-list .mat-list-item:focus {
-    background-color: mat-color($HotelApp-primary, 300);
-    color: mat-color($HotelApp-primary, 900);
-}
