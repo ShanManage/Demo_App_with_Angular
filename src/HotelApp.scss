@@ -83,3 +83,24 @@ $HotelApp: mat-light-theme($HotelApp-primary, $HotelApp-accent, $HotelApp-warn);
 @include sidenav-list-component-theme($HotelApp);
 
 
+// $hotel-typography: mat-typography-config(
+//     $font-family:   'Rubik , sens-serif',
+//     $disply-4:      mat-typography-level(112px, 112px, 300),
+//     $disply-3:      mat-typography-level(56px, 56px, 400),
+//     $disply-2:      mat-typography-level(45px, 48px, 400),
+//     $disply-1:      mat-typography-level(34px, 40px, 400),
+//     $headline:      mat-typography-level(97.54px, 0px, 400),
+//     $title:         mat-typography-level(500px, 0px, 500),
+//     $subheading-2:  mat-typography-level(48.77px, 0.25px, 400),
+//     $subheading-1:  mat-typography-level(34.54px, 0.25px, 400),
+//     $body-2:        mat-typography-level(14.22px, 0.25px, 500),
+//     $body-1:        mat-typography-level(16.26px, 0.5px, 400),
+//     $caption:       mat-typography-level(12.19px, 1.25px, 400),
+//     $button:        mat-typography-level(14.22px, 1.25px, 400),
+//     $input:         mat-typography-level(inherit, 1.125, 400)
+// );
+    
+// @include mat-base-typography($hotel-typography);
+// @include mat-checkbox-typography($hotel-typography);
+// @include angular-material-typography($hotel-typography);
+// @include mat-core($hotel-typography);

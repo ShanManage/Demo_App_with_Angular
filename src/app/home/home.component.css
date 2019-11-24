@@ -1,11 +1,10 @@
 .container {
     height: 100vh;
-    background-color: rgb(145, 151, 235);
-
+    background-color: rgb(185, 188, 238);
 }
 
 .book-now-container {
-
+    padding: 35px 115px;
 }
 
 .book-now-button {
@@ -13,5 +12,5 @@
     color: white;
     border: 1px solid white;
     text-transform: uppercase;
-    
 }
+    
